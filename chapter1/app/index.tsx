@@ -32,17 +32,18 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
     },
     title: {
-        color: "white",
+        color: 'white',
         fontSize: 42,
         fontWeight: 'bold',
         textAlign: 'center',
         marginBottom: 120,
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.4,
-        shadowRadius: 4,
 
-        // Shadow for Android
+        // For web (and cross-platform safe)
+        textShadowColor: 'rgba(0, 0, 0, 0.6)',
+        textShadowOffset: { width: 0, height: 2 },
+        textShadowRadius: 4,
+
+        // Optional: Android shadow
         elevation: 5,
     },
     btnText: {
